@@ -1,0 +1,161 @@
+
+
+.one {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.front-one {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  vertical-align: middle;
+  border: solid 2px rgba(88, 19, 7, 0.383);
+}
+
+.front-one img {
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 200px;
+  max-height: 300px;
+}
+
+
+.navigation {
+  min-height: 50px;
+  margin-bottom: 120px;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+}
+
+.nav-item {
+  position: relative;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 5px;
+  display: inline-block;
+  width: 10%;
+  margin-left: calc((100% - 40%)/5) ;
+  border-radius: 10px;
+  text-align: center;
+  background-color: lightblue;
+}
+
+.nav-item__link {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+
+.nav-item:active {
+  opacity: 0.7;
+} 
+
+
+
+.item-list {
+  opacity: 0;
+  visibility: hidden;
+  transition: .55s opacity, .55s visibility;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 20;
+  border-radius: 10%;
+  list-style: none; 
+}
+
+.nav-item:hover .item-list {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+  background-color: none;
+}
+
+.item-elem {
+  padding: 10px;
+  text-align: right;
+}
+
+.item-elem:not(:last-child) {
+  border-bottom:solid 1px rgb(25, 165, 247);
+}
+
+.item-elem:not(:first-child) {
+  border-top:solid 1px rgb(131, 229, 241);
+}
+
+
+
+.five {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+  height: 400px;
+}
+
+.five__sort {
+  position: absolute;
+  padding: 15px;
+}
+
+.five__block {
+  width: 15%;
+  margin-top: auto;
+  text-align: center;
+  font-size: 80px;
+}
+
+.five-palevioletred {
+  height: 50%;
+  background-color: palevioletred;
+}
+
+.five-darkgreen {
+  height: 30%;
+  background-color: darkgreen;
+}
+
+.five-gold{
+  height: 60%;
+  background-color: gold;
+}
+
+.five-blue {
+  height: 40%;
+  background-color: blue;
+}
+
+.five-grey {
+  height: 70%;
+  background-color: grey;
+}
+
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
+
+.no-print {
+  margin: 30px;
+  font-size: 80px;
+  text-align: center;
+}
